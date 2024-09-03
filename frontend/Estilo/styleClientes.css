@@ -21,22 +21,22 @@ h2{
     font-family: cursive;
     font-size: 1.5em;
     font-weight:900;
-    color: var(--colorBlue); 
+    color: var(--colorGreen); 
 }
 
 
 .boton{
     background-color: white;
-    color: purple;
+    color: var(--colorGreen);
     padding: 5px;
-    border: 1px purple solid;
+    border: 1px var(--colorGreen) solid;
     border-radius: 3px;   
     font-size: 0.8em;
 }
 
 .boton:hover{
     transform: scale(1.1);
-    box-shadow: 1px 2px 10px purple;
+    box-shadow: 1px 2px 10px var(--colorBlue);
     font-weight: 600;
 }
 
@@ -53,34 +53,34 @@ table{
 th{
     padding: 10px;
     margin: 5px;
-    background-color:rgb(22, 13, 83) ;
-    border: white solid 2px ;
+    background-color:var(--colorGreen) ;
+    border:white solid 2px ;
     border-collapse: collapse;
-    color: rgba(236, 168, 236, 0.966);
+    color: white;
 }
 
 td{
     padding: 10px;
     margin: 5px;
-    border:purple solid 2px ;
+    border:var(--colorGreen) solid 2px ;
     border-collapse: collapse; 
     font-size: 12px;
 }
 
 table tr:nth-child(even) td {
-    background-color: rgba(15, 15, 130, 0.265);
+    background-color: rgba(239, 192, 192, 0.265);
 }
 
 button{
     background-color: white;
-    color: purple;
+    color: var(--colorGreen);
     padding: 5px;
-    border: 1px purple solid;
+    border: 1px var(--colorGreen) solid;
     border-radius: 3px;
 }
 
 button:hover{
-    background-color: purple;
+    background-color: var(--colorBlue);
     color: white;
 }
 

@@ -3,7 +3,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 51%, rgba(2,0,36,1) 100%);
     margin: 10px;
 }
 
@@ -17,7 +16,7 @@ main{
     margin: 30px;
     background-color:white;
     border-radius: 15px;
-    border: solid purple 2px;
+    border: solid var(--colorBlue) 2px;
     box-shadow: 1px 2px 20px var(--colorGreen);
    
  
@@ -48,7 +47,7 @@ main{
     align-items: left;
     gap: 2em;
     font-family: cursive;
-    color: purple;
+    color: var(--colorGreen);
     font-weight: 600;
 }
 
@@ -64,24 +63,20 @@ main{
     justify-content: left;
 }
 
-.uno, .dos{
-    gap:2em;
+.uno{
+    gap:1em;
+}
+
+.dos{
+    gap:3.2em;
 }
 
 .tres{
-    gap:1.1em;
+    gap:6.1em;
 }
 
 .cuatro{
-    gap:3.1em
-}
-
-.cinco{
-    gap: 2.1em;
-}
-
-.seis{
-    gap:1.8em;
+    gap:4.7em
 }
 
 .siete{
