@@ -100,81 +100,56 @@ main{
 }
 
 .presentacion{
-    width: 70%;
-    height: auto;
+    width: 61.8%;
+    height: 25.3em;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:right;
     align-items:center;
-    background: linear-gradient(110deg, rgba(255,255,255,1) 45%, rgba(17,171,202,1) 96%, rgba(219,17,219,1) 100%);
     gap: 1px;
-    background-color: black;
+    background-image:url(./imagenes/Untitled-3.png);
+    background-size: cover;
+    background-repeat: none;    
 
 }
 
-.openbook{
-    height: 25em;
-    width: auto;
-    opacity: 0.8;
-}
-
-.letter{
-    width: 30em;
+.letra{
+    width: 15em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    gap: 2em;
+    padding: 10em;
 }
-.tit{
+
+.presentacion-title{
     font-family: cursive;
-    font-weight: 600;
-    font-size: 2.5em;    
-    color: black;
-    
-    text-shadow: 
-        1px 1px 2px black,
-        0 0 1em  rgba(17,171,202,1),
-        0 0 0.2em  rgba(17,171,202,1);
-    text-align:center;    
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    color: var(--colorBlue);
+    -webkit-text-stroke-color:var(--colorGreen);
+    -webkit-text-stroke-width: 2px;
+
 }
 
-.titname{
+.letrero{
     font-family: var(--fuentePrincipal);
-    font-size: 4em;
-    font-weight: bolder;
-    -webkit-text-stroke-color: var(--colorGreen);
-    -webkit-text-stroke-width: 0.01px;
-}
-
-.greet{
-    font-family: cursive;
-    font-size: 1.2em;
-}
-
-.marca{
-    font-family: var(--fuentePrincipal);
-    -webkit-text-stroke-color: var(--colorPink);
+    font-size: 1.3em;
+    color: rgb(230, 83, 67);
+    -webkit-text-stroke-color:var(--colorGreen);
     -webkit-text-stroke-width: 0.5px;
 }
-
-p{
-    width: 38em;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 0.7em;
-}
-
 .subcuerpo{
-    width: 29%;
+    width: 36%;
     height: 25.3em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .div-clientes{
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,38 +159,28 @@ p{
 .boton-clientes{
     width: 100%;
     height: 100%;
-    background: linear-gradient(110deg, rgba(17,171,202,1) 0%, rgba(17,171,202,1) 56%, rgba(219,17,219,1) 100%);
-    border: solid 1px rgba(17,171,202,1);
+    background: linear-gradient(122deg, rgba(255,255,255,1) 37%, rgba(255,140,105,1) 66%);
+    border: solid 1px var(--colorPink);
     font-family: cursive;
     font-weight: 600;
     font-size: 1.2em;
-}
-
-.div-productos{
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.boton-productos{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(110deg, rgba(17,171,202,1) 0%, rgba(17,171,202,1) 56%, rgba(219,17,219,1) 100%);
-    border: solid 1px rgba(17,171,202,1);
-    font-family: cursive;
-    font-weight: 600;
-    font-size: 1.2em;
+    color: var(--colorDark);
 }
 
 button:hover{
-    transform: scale(1.03);
-    font-weight: 600;
-    color:white;
-    box-shadow: 2px 2px 6px var(--colorBlue);
-    cursor:pointer;
-
+    background-color: var(--colorBlue);
 }
+
+button:hover::after{
+   
+    font-size: 1.1em;
+    color: var(--colorDark);
+    box-shadow: 2px 2px 6px var(--colorPink);
+    cursor:pointer;
+    content: ' : Podras agregar, eliminar y/o editar datos como el nombre del profesional, especialidad, fecha, duracion de la consulta, entre otros. ';
+    
+}
+
 
 
 footer{
